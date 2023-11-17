@@ -28,7 +28,8 @@ const icons = {
   follow: '../assets/button/follow.svg'
 }
 
-const urlIcon = new URL(icons[icon.value], import.meta.url).href
+const urlIcon = new URL(icons[icon.value], import.meta.url).pathname
+
 </script>
 
 <template>
