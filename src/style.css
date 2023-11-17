@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --colores-semnticos-gray-gray-2: #666666;
+  --colores-semnticos-gray-gray-4: #fafafa;
+  --colores-semnticos-info-info-1: #2196f3;
+  --colores-semnticos-info-info-3: #2196f3;
+  --colores-semnticos-warning-warning-2: #ffd54f;
+  --colores-semnticos-warning-warning-3: #fff8e1;
+  --gray-gray-2: #666666;
+  --primar-color-primary-2: #9fa8da;
+  --primary-color-primary: #1a237e;
+  --principales-primary-primary-1: #1a237e;
+  --principales-primary-primary-2: #9fa8da;
+  --principales-primary-primary-3: #e8eaf6;
+  --principales-secondary-secondary-1: #de1c7d;
+  --principales-secondary-secondary-2: #e565a5;
+  --principales-secondary-secondary-3: #fffbfc;
+  --principales-success-succes-1: #8bc34a;
+}
