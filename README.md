@@ -43,5 +43,3 @@ Una pequeña intro sobre la instalación.
 2. Entre en la carpeta Talentpitch: `cd Talentpitch`
 3. Instale las dependencias: `npm install`.
 4. Ejecute en modo desarrollo: `npm run dev`
-
-También puede ver el despliegue usando github actions y github pages [AQUI](https://m8-babbage.github.io/Talentpitch/offers)
