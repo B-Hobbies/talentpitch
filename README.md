@@ -1,35 +1,47 @@
-# talent-pitch
+# Talent Pitch
 
-This template should help get you started developing with Vue 3 in Vite.
+## Table of Contents
 
-## Recommended IDE Setup
+1. [Informacion](#información)
+2. [Tecnologias](#tecnologías)
+3. [Ejecución](#ejecución)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Información
 
-## Customize configuration
+Este proyecto está creando con el framework Vue/Vite.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Estoy implementando:
 
-## Project Setup
+Conventional commits para crear los commits. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-```sh
-npm install
-```
+Git Flow para crear una estrategia de ramas. [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/).
 
-### Compile and Hot-Reload for Development
+Semver para crear el versionamiento. [Semver](https://semver.org/).
 
-```sh
-npm run dev
-```
+Vuex para gestionar el estado de la aplicación usando módulos. [Vuex](https://vuex.vuejs.org/installation.html#direct-download-cdn)
 
-### Compile and Minify for Production
+Tailwind para los estilos "Solo instalado y configurado, no se ha implementado aún". [Tailwind CSS](https://tailwindcss.com/docs/guides/vite#vue)
 
-```sh
-npm run build
-```
+Todas las peticiones se están realizando con la API nativa, fetch.
 
-### Lint with [ESLint](https://eslint.org/)
+## Tecnologías
 
-```sh
-npm run lint
-```
+Lista de tecnologías usadas en el proyection
+
+- [Node JS](https://nodejs.org/en/): Version v20.9.0
+- [Vue](https://vuejs.org/guide/introduction.html): Version 3.3.4
+- [Vuex](https://vuex.vuejs.org/installation.html#direct-download-cdn): Version 4.0.2
+- [Tailwind](https://tailwindcss.com/docs/guides/vite#vue): Version 3.3.5
+- [Vue Router](): Version 4.2.5
+
+
+## Ejecución
+
+Una pequeña intro sobre la instalación.
+
+1. Clone el repositorio: `git clone https://github.com/M8-Babbage/Talentpitch`
+2. Entre en la carpeta Talentpitch: `cd Talentpitch`
+3. Instale las dependencias: `npm install`.
+4. Ejecute en modo desarrollo: `npm run dev`
+
+También puede ver el despliegue usando github actions y github pages [AQUI](https://m8-babbage.github.io/Talentpitch/offers)
