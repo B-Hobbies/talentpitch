@@ -8,7 +8,7 @@
 
 ## Información
 
-Este proyecto está creando con el framework Vue/Vite.
+Este proyecto está creado con el framework Vue/Vite.
 
 Estoy implementando:
 
