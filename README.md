@@ -1,6 +1,6 @@
 # Talent Pitch
 
-## Table of Contents
+## Tabla de contenidos
 
 1. [Informacion](#información)
 2. [Tecnologias](#tecnologías)
