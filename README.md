@@ -26,7 +26,7 @@ Todas las peticiones se están realizando con la API nativa, fetch.
 
 ## Tecnologías
 
-Lista de tecnologías usadas en el proyection
+Lista de tecnologías usadas en el proyecto
 
 - [Node JS](https://nodejs.org/en/): Version v20.9.0
 - [Vue](https://vuejs.org/guide/introduction.html): Version 3.3.4
