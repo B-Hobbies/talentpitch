@@ -99,7 +99,7 @@ onMounted(async () => {
 }
 
 .offers--title-second {
-  margin-top: 16px;
+  margin-top: 40px;
 }
 
 .swiper {
