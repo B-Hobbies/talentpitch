@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, toRefs } from 'vue'
+import { toRefs } from 'vue'
 
 const props = defineProps({
   icon: {
@@ -28,7 +28,7 @@ const icons = {
   follow: '../assets/button/follow.svg'
 }
 
-const urlIcon = new URL(icons[icon.value], import.meta.url).pathname
+const urlIcon = new URL(icons[icon.value], import.meta.url).href
 
 </script>
 
@@ -42,7 +42,7 @@ const urlIcon = new URL(icons[icon.value], import.meta.url).pathname
     }"
   >
     <slot />
-    <img v-if="icon" :src="urlIcon" alt="More logo" />
+    <img v-if="icon" :src="urlIcon" alt="Button logo" />
   </button>
 </template>
 <style scoped>
