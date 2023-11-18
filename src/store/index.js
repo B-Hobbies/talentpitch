@@ -9,7 +9,7 @@ export default createStore({
   state: {
     headerItems: [
       { name: 'Conéctate', route: '/' },
-      { name: 'Mis muros', route: '/' },
+      { name: 'Mi muro', route: '/' },
       { name: 'Mis listas', route: '/' },
       { name: 'Aprende', route: '/' }
     ],

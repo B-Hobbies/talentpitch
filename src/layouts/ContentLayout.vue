@@ -44,5 +44,9 @@ console.log(currentRoute.value)
   width: 100%;
   margin-bottom: 80px;
 }
+
+.content--route {
+  padding-top: 24px;
+}
 </style>
 

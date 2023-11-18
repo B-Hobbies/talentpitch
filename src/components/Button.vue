@@ -23,9 +23,9 @@ const props = defineProps({
 const { icon, isLeft, size, type } = toRefs(props)
 
 const icons = {
-  more: '/src/assets/button/more.svg',
-  share: '/src/assets/button/share.svg',
-  follow: '/src/assets/button/follow.svg'
+  more: '/Talenpitch/assets/button/more.svg',
+  share: '/Talenpitch/assets/button/share.svg',
+  follow: '/Talenpitch/assets/button/follow.svg'
 }
 
 const urlIcon = new URL(icons[icon.value], import.meta.url).href
