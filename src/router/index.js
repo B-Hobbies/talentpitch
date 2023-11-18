@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import OffersView from '../views/OffersView.vue'
+import CompanyView from '../views/CompanyView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  // history: createWebHashHistory(import.meta.env.BASE_URL),
+  // history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/offers',
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/company',
       name: 'company',
-      component: () => import('../views/CompanyView.vue')
+      component: CompanyView
     },
     {
       path: '/:pathMatch(.*)*',

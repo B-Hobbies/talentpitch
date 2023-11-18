@@ -1,7 +1,8 @@
 <script setup>
+import Resumen from '@/components/Resumen.vue'
 </script>
 
 <template>
-  Companyyyyy
+  <Resumen />
 </template>
 <style scoped></style>

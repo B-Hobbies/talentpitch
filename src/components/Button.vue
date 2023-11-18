@@ -1,6 +1,10 @@
 <script setup>
 import { toRefs } from 'vue'
 
+import more from '@/assets/button/more.svg'
+import share from '@/assets/button/share.svg'
+import follow from '@/assets/button/follow.svg'
+
 const props = defineProps({
   icon: {
     type: String,
@@ -23,9 +27,9 @@ const props = defineProps({
 const { icon, isLeft, size, type } = toRefs(props)
 
 const icons = {
-  more: '/Talenpitch/assets/button/more.svg',
-  share: '/Talenpitch/assets/button/share.svg',
-  follow: '/Talenpitch/assets/button/follow.svg'
+  more: more,
+  share: share,
+  follow: follow
 }
 
 const urlIcon = new URL(icons[icon.value], import.meta.url).href
