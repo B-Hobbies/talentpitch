@@ -1,5 +1,11 @@
 <script setup>
 import { toRefs } from 'vue'
+import eye from '@/assets/option/eye.svg'
+import fileUser from '@/assets/option/fileUser.svg'
+import photoVideo from '@/assets/option/photoVideo.svg'
+import transporter from '@/assets/option/transporter.svg'
+import users from '@/assets/option/users.svg'
+import video from '@/assets/option/video.svg'
 
 const props = defineProps({
   icon: {
@@ -15,12 +21,12 @@ const props = defineProps({
 const { icon, status } = toRefs(props)
 
 const icons = {
-  eye: '../assets/option/eye.svg',
-  fileUser: '../assets/option/fileUser.svg',
-  photoVideo: '../assets/option/photoVideo.svg',
-  transporter: '../assets/option/transporter.svg',
-  users: '../assets/option/users.svg',
-  video: '../assets/option/video.svg'
+  eye,
+  fileUser,
+  photoVideo,
+  transporter,
+  users,
+  video
 }
 
 const urlIcon = new URL(icons[icon.value], import.meta.url).href

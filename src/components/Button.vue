@@ -27,9 +27,9 @@ const props = defineProps({
 const { icon, isLeft, size, type } = toRefs(props)
 
 const icons = {
-  more: more,
-  share: share,
-  follow: follow
+  more,
+  share,
+  follow
 }
 
 const urlIcon = new URL(icons[icon.value], import.meta.url).href
@@ -37,15 +37,13 @@ const urlIcon = new URL(icons[icon.value], import.meta.url).href
 </script>
 
 <template>
-  <button
-    v-bind:class="{
-      left: isLeft,
-      small: size === 'small',
-      medium: size === 'medium',
-      big: size === 'big',
-      secondary: type !== 'primary'
-    }"
-  >
+  <button v-bind:class="{
+    left: isLeft,
+    small: size === 'small',
+    medium: size === 'medium',
+    big: size === 'big',
+    secondary: type !== 'primary'
+  }">
     <slot />
     <img v-if="icon" :src="urlIcon" alt="Button logo" />
   </button>
