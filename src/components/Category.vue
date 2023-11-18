@@ -84,5 +84,6 @@ const urlIcon = new URL(icons[icon.value], import.meta.url).href
 .category--tags {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px 8px;
 }
 </style>

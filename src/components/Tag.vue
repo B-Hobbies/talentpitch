@@ -17,5 +17,6 @@
   line-height: 150%;
   letter-spacing: 0.5px;
   margin-right: 8px;
+  cursor: pointer;
 }
 </style>
