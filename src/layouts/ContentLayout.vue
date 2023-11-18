@@ -31,15 +31,14 @@ const currentRoute = computed(() => route.path.replace('/', ''))
 </template>
 <style scoped>
 .main {
-  width: 100%;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   padding: 24px 141px 0 141px;
   display: flex;
 }
 
 .content {
-  width: 100%;
+  width: calc(100% - (336px + 16px));
   margin-bottom: 80px;
 }
 

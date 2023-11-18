@@ -95,15 +95,12 @@ const setOption = (item) => {
 <style scoped>
 .aside {
   position: relative;
-  width: 100%;
   min-width: 336px;
-  max-width: 336px;
   padding: 32px 24px 16px 24px;
   border-radius: 10px;
   border: 1px solid var(--principales-primary-primary-3, );
   background: #fff;
   margin-top: -150px;
-  z-index: 10px;
   margin-right: 16px;
   display: flex;
   flex-direction: column;
