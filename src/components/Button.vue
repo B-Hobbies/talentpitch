@@ -37,6 +37,7 @@ const urlIcon = new URL(icons[icon.value], import.meta.url).href
     v-bind:class="{
       left: isLeft,
       small: size === 'small',
+      medium: size === 'medium',
       big: size === 'big',
       secondary: type !== 'primary'
     }"
@@ -68,6 +69,10 @@ button {
 
 .small {
   font-size: 11px;
+}
+
+.medium {
+  padding: 8px 12px;
 }
 
 .big {
