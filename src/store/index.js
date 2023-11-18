@@ -21,12 +21,18 @@ export default createStore({
       { icon: 'transporter', value: 'EXHIBICIONES', status: 20 },
       { icon: 'fileUser', value: 'VACANTES', status: 20 },
       { icon: 'photoVideo', value: 'CONTENIDOS', status: 20 }
+    ],
+    menu: [
+      { name: 'Perfil', path: '/company', active: false },
+      { name: 'Vacantes', path: '/offers', active: false },
+      { name: 'Listas', path: '/', active: false },
     ]
   },
   getters: {
-    headerItems: (state) => state.headerItems,
+    headerItems: (state) => [...state.headerItems],
     stars: (state) => state.stars,
-    options: (state) => state.options
+    options: (state) => [...state.options],
+    menu: (state) => [...state.menu],
   },
   mutations: {
     setStars: (state, payload) => {

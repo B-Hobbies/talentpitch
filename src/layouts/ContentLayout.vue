@@ -3,6 +3,16 @@ import Header from '@/components/Header.vue'
 import Banner from '@/components/Banner.vue'
 import Profile from '@/components/Profile.vue'
 import Status from '@/components/Status.vue'
+import Menu from '@/components/Menu.vue'
+import CompanyLayout from '@/layouts/CompanyLayout.vue'
+import OffersLayout from '@/layouts/OffersLayout.vue'
+import { computed } from '@vue/reactivity';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const currentRoute = computed(() => route.path.replace('/', ''))
+console.log(currentRoute.value)
+
 </script>
 <template>
   <Header />
@@ -11,6 +21,13 @@ import Status from '@/components/Status.vue'
     <Profile />
     <section class="content">
       <Status />
+      <Menu />
+      <div v-if="currentRoute === 'company'" class="content--route">
+        <CompanyLayout />
+      </div>
+      <div v-else class="content--route">
+        <OffersLayout />
+      </div>
     </section>
   </main>
 </template>
