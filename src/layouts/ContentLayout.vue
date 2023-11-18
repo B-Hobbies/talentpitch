@@ -11,8 +11,6 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const currentRoute = computed(() => route.path.replace('/', ''))
-console.log(currentRoute.value)
-
 </script>
 <template>
   <Header />

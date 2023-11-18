@@ -1,6 +1,7 @@
 <script setup>
 import Button from '@/components/Button.vue'
 import { toRefs } from 'vue'
+import defaultImage from '@/assets/offers/default.png'
 
 const props = defineProps({
   image: {
@@ -15,7 +16,7 @@ const { image } = toRefs(props)
 
 <template>
   <section class="card">
-    <img :src="image" alt="Card image">
+    <img class="card--image" :src="image || defaultImage" alt="Card image">
     <section class="card--expertice">
       <div>
         <span class="card--description">Experticia</span>
@@ -54,6 +55,11 @@ const { image } = toRefs(props)
   border: 1px solid var(--principales-primary-primary-3);
   background: #FFF;
   overflow: hidden;
+}
+
+.card .card--image {
+  width: 100%;
+  height: 73px;
 }
 
 .card--expertice {
