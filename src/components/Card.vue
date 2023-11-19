@@ -8,9 +8,21 @@ const props = defineProps({
     type: String,
     default: ''
   },
+  name: {
+    type: String,
+    default: ''
+  },
+  companyName: {
+    type: String,
+    default: ''
+  },
+  description: {
+    type: String,
+    default: ''
+  }
 })
 
-const { image } = toRefs(props)
+const { image, name, companyName, description } = toRefs(props)
 
 </script>
 
@@ -25,10 +37,10 @@ const { image } = toRefs(props)
       <img src="@/assets/offers/share.svg" alt="Share icon">
     </section>
     <section class="card--content">
-      <span class="card--one">Lider UX/UI</span>
-      <div class="card--tag">Creada por organización: Nombre</div>
-      <span class="card--two">¿Cómo podrías crear un plan de ejecución a seis meses desde tu área de conocimiento para
-        generar valor en una organización?</span>
+      <span class="card--one truncate">{{ name ?? 'Lider UX/UI' }}</span>
+      <div class="card--tag truncate">Creada por organización: {{ companyName ?? 'Nombre' }}</div>
+      <span class="card--two">¿Cómo podrías crear un plan de ejecución a seis meses desde tu área de
+        conocimiento para generar valor en una organización?</span>
       <section class="card--marks">
         <div>
           <p>60</p>
@@ -76,7 +88,6 @@ const { image } = toRefs(props)
 
 .card--expertice div span {
   color: var(--colores-semnticos-gray-gray-2);
-  font-family: 'Roboto';
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
@@ -91,18 +102,16 @@ const { image } = toRefs(props)
 .card--content .card--one {
   display: block;
   color: var(--principales-primary-primary-1);
-  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
   line-height: 162%;
   letter-spacing: 0.5px;
   margin-bottom: 5px;
 }
-
 .card--content .card--two {
   display: block;
+  height: 72px;
   color: var(--gray-gray-2, #666);
-  font-family: 'Roboto';
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
@@ -116,7 +125,6 @@ const { image } = toRefs(props)
   background: var(--colores-semnticos-info-info-3);
   color: var(--colores-semnticos-info-info-1);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
@@ -143,7 +151,6 @@ const { image } = toRefs(props)
 
 .card--marks div span {
   color: var(--colores-semnticos-gray-gray-2);
-  font-family: 'Roboto';
   font-size: 11px;
   font-weight: 500;
   line-height: 120%;
@@ -158,7 +165,6 @@ const { image } = toRefs(props)
   color: var(--principales-secondary-secondary-3);
   color: var(--principales-secondary-secondary-3, #FFFBFC);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;

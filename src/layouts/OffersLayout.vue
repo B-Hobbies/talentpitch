@@ -35,10 +35,10 @@ onMounted(async () => {
       </button>
       <swiper :modules="[Controller]" @swiper="setControlledSwiper" :slides-per-view="3" :space-between="16">
         <swiper-slide v-for="(offer, index) in offers" :key="index">
-          <Card :image="offer.image" />
+          <Card :name="offer.name" :companyName="offer.company_name" :description="offer.description" :image="offer.image" />
         </swiper-slide>
         <swiper-slide v-for="(offer, index) in offers" :key="index">
-          <Card :image="offer.image" />
+          <Card :name="offer.name" :companyName="offer.company_name" :description="offer.description" :image="offer.image" />
         </swiper-slide>
       </swiper>
       <button @click="controlledSwiper.slideNext()" class="offers--prev">
@@ -52,10 +52,10 @@ onMounted(async () => {
       </button>
       <swiper :modules="[Controller]" @swiper="setControlledSwiperTwo" :slides-per-view="3" :space-between="16">
         <swiper-slide v-for="(offer, index) in offers" :key="index">
-          <Card :image="offer.image" />
+          <Card :name="offer.name" :companyName="offer.company_name" :description="offer.description" :image="offer.image" />
         </swiper-slide>
         <swiper-slide v-for="(offer, index) in offers" :key="index">
-          <Card :image="offer.image" />
+          <Card :name="offer.name" :companyName="offer.company_name" :description="offer.description" :image="offer.image" />
         </swiper-slide>
       </swiper>
       <button @click="controlledSwiperTwo.slideNext()" class="offers--prev">
