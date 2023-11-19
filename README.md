@@ -27,6 +27,8 @@ Implementación sobre las estrellas para definir el status del perfil.
 
 Implementación de la librería swiper para manejo de slides, los slides se llenan con la información del end point dado en la documentación, su llamado se hace con la API nativa de fetch para evitar dependencias extras.
 
+Implementación de loader mientras se realiza la petición al backend.
+
 Conventional commits para crear los commits. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 Git Flow para crear una estrategia de ramas. [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/).
