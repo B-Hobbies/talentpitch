@@ -27,40 +27,45 @@ onMounted(async () => {
 })
 </script>
 <template>
-  <span class="offers--title">Publicadas recientemente</span>
-  <section v-if="offers.length > 0" class="offers--swiper">
-    <button @click="controlledSwiper.slidePrev()" class="offers--next">
-      <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
-    </button>
-    <swiper :modules="[Controller]" @swiper="setControlledSwiper" :slides-per-view="3" :space-between="16">
-      <swiper-slide v-for="(offer, index) in offers" :key="index">
-        <Card :image="offer.image" />
-      </swiper-slide>
-      <swiper-slide v-for="(offer, index) in offers" :key="index">
-        <Card :image="offer.image" />
-      </swiper-slide>
-    </swiper>
-    <button @click="controlledSwiper.slideNext()" class="offers--prev">
-      <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
-    </button>
-  </section>
-  <span class="offers--title offers--title-second">Publicadas recientemente</span>
-  <section v-if="offers.length > 0" class="offers--swiper">
-    <button @click="controlledSwiperTwo.slidePrev()" class="offers--next">
-      <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
-    </button>
-    <swiper :modules="[Controller]" @swiper="setControlledSwiperTwo" :slides-per-view="3" :space-between="16">
-      <swiper-slide v-for="(offer, index) in offers" :key="index">
-        <Card :image="offer.image" />
-      </swiper-slide>
-      <swiper-slide v-for="(offer, index) in offers" :key="index">
-        <Card :image="offer.image" />
-      </swiper-slide>
-    </swiper>
-    <button @click="controlledSwiperTwo.slideNext()" class="offers--prev">
-      <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
-    </button>
-  </section>
+  <div v-if="offers.length">
+    <span class="offers--title">Publicadas recientemente</span>
+    <section v-if="offers.length > 0" class="offers--swiper">
+      <button @click="controlledSwiper.slidePrev()" class="offers--next">
+        <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
+      </button>
+      <swiper :modules="[Controller]" @swiper="setControlledSwiper" :slides-per-view="3" :space-between="16">
+        <swiper-slide v-for="(offer, index) in offers" :key="index">
+          <Card :image="offer.image" />
+        </swiper-slide>
+        <swiper-slide v-for="(offer, index) in offers" :key="index">
+          <Card :image="offer.image" />
+        </swiper-slide>
+      </swiper>
+      <button @click="controlledSwiper.slideNext()" class="offers--prev">
+        <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
+      </button>
+    </section>
+    <span class="offers--title offers--title-second">Publicadas recientemente</span>
+    <section v-if="offers.length > 0" class="offers--swiper">
+      <button @click="controlledSwiperTwo.slidePrev()" class="offers--next">
+        <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
+      </button>
+      <swiper :modules="[Controller]" @swiper="setControlledSwiperTwo" :slides-per-view="3" :space-between="16">
+        <swiper-slide v-for="(offer, index) in offers" :key="index">
+          <Card :image="offer.image" />
+        </swiper-slide>
+        <swiper-slide v-for="(offer, index) in offers" :key="index">
+          <Card :image="offer.image" />
+        </swiper-slide>
+      </swiper>
+      <button @click="controlledSwiperTwo.slideNext()" class="offers--prev">
+        <img src="@/assets/offers/arrow.svg" alt="Arrow logo">
+      </button>
+    </section>
+  </div>
+  <div class="loader--container" v-else>
+    <div class="loader"></div>
+  </div>
 </template>
 <style scoped>
 .offers--title {

@@ -8,9 +8,24 @@
 
 ## Información
 
-Este proyecto está creado con el framework Vue/Vite.
+Este proyecto está creado con el framework Vue/Vite, para poder visualizar correctamente los diseños pixel to pixel, debe cargar el aplicativo sobre una pantalla superior a 1440px de ancho.
+
 
 Estoy implementando:
+
+Variables de CSS sacadas desde figma para un mejor mantenimiento o implementaciones de modos oscuros.
+
+Implementación de Github Actions para hacer un deploy automático sobre los cambios de la rama main sobre Github Pages implementando un Hash Routing "ya que las rutas son manejadas desde el cliente" e imágenes dinámicas "sobre los componentes que usan iconos".
+
+Implementación de rutas independientes para el manejo de ofertas y empresas.
+
+Menú de "Perfil, Vanantes, Listas" funcional, cambia sus estilos según la ruta actual.
+
+Implementación de Vuex con módulos independientes, se hace implementación del root state para la información general de la aplicación "header, estrellas, menú, panel izquierdo", así como módulos para manipulación del estado de ofertas y empresas con sus propias implementaciones, [Vuex](https://vuex.vuejs.org/installation.html#direct-download-cdn) 
+
+Implementación sobre las estrellas para definir el status del perfil.
+
+Implementación de la librería swiper para manejo de slides, los slides se llenan con la información del end point dado en la documentación, su llamado se hace con la API nativa de fetch para evitar dependencias extras.
 
 Conventional commits para crear los commits. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
@@ -18,11 +33,7 @@ Git Flow para crear una estrategia de ramas. [Git Flow](https://nvie.com/posts/a
 
 Semver para crear el versionamiento. [Semver](https://semver.org/).
 
-Vuex para gestionar el estado de la aplicación usando módulos. [Vuex](https://vuex.vuejs.org/installation.html#direct-download-cdn)
-
 Tailwind para los estilos "Solo instalado y configurado, no se ha implementado aún". [Tailwind CSS](https://tailwindcss.com/docs/guides/vite#vue)
-
-Todas las peticiones se están realizando con la API nativa, fetch.
 
 ## Tecnologías
 
@@ -32,7 +43,7 @@ Lista de tecnologías usadas en el proyecto
 - [Vue](https://vuejs.org/guide/introduction.html): Version 3.3.4
 - [Vuex](https://vuex.vuejs.org/installation.html#direct-download-cdn): Version 4.0.2
 - [Tailwind](https://tailwindcss.com/docs/guides/vite#vue): Version 3.3.5
-- [Vue Router](): Version 4.2.5
+- [Vue Router](https://router.vuejs.org/): Version 4.2.5
 
 
 ## Ejecución
