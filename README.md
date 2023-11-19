@@ -13,6 +13,8 @@ Este proyecto está creado con el framework Vue/Vite, para poder visualizar corr
 
 Estoy implementando:
 
+Truncado de texto en las cards.
+
 Variables de CSS sacadas desde figma para un mejor mantenimiento o implementaciones de modos oscuros.
 
 Implementación de Github Actions para hacer un deploy automático sobre los cambios de la rama main sobre Github Pages implementando un Hash Routing "ya que las rutas son manejadas desde el cliente" e imágenes dinámicas "sobre los componentes que usan iconos".
