@@ -49,7 +49,7 @@ const categories = store.getters['company/categories']
   display: flex;
   gap: 16px;
   margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .company--title {
@@ -58,7 +58,7 @@ const categories = store.getters['company/categories']
   justify-content: space-between;
   align-items: center;
   height: 45px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .company--title span {

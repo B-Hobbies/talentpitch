@@ -107,6 +107,7 @@ const setOption = (item) => {
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
+  height: max-content;
 }
 
 .aside--photo {
