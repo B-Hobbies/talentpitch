@@ -39,8 +39,7 @@ const { image, name, companyName, description } = toRefs(props)
     <section class="card--content">
       <span class="card--one truncate">{{ name ?? 'Lider UX/UI' }}</span>
       <div class="card--tag truncate">Creada por organización: {{ companyName ?? 'Nombre' }}</div>
-      <span class="card--two">¿Cómo podrías crear un plan de ejecución a seis meses desde tu área de
-        conocimiento para generar valor en una organización?</span>
+      <div class="card--two_wrapper"><span class="card--two">{{ description ?? '¿Cómo podrías crear un plan de ejecución a seis meses desde tu área de conocimiento para generar valor en una organización?' }}</span></div>
       <section class="card--marks">
         <div>
           <p>60</p>
@@ -108,15 +107,23 @@ const { image, name, companyName, description } = toRefs(props)
   letter-spacing: 0.5px;
   margin-bottom: 5px;
 }
-.card--content .card--two {
-  display: block;
+
+.card--two_wrapper {
+  width: 100%;
   height: 72px;
+  margin-bottom: 16px;
+}
+
+.card--content .card--two {
   color: var(--gray-gray-2, #666);
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.5px;
-  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card--tag {
